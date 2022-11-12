@@ -9,9 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.backgroundColor = .white
+        return imageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBlue
+        view.addSubview(imageView)
     }
 
 
